@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MovieNight from "../../assets/images/png/movieNight.png";
 
 import "./index.scss";
@@ -16,7 +17,9 @@ const Home = () => {
       <div className="movie-container">
         <img className="movie-img" src={MovieNight} alt="" />
       </div>
-      <div className="create-btn">🎉 Create my event</div>
+      <Link to="/create">
+        <div className="create-btn">🎉 Create my event</div>
+      </Link>
     </div>
   );
 };
